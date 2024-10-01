@@ -24,7 +24,7 @@ After service completion, customers can leave reviews and ratings to provide fee
 
 Database Items: MONGODB
 
-1. Users Collection (Customers & Admins):
+Users Collection (Customers & Admins):
 UserID (unique identifier)
 First Name
 Last Name
@@ -33,7 +33,8 @@ Email (for contact/receipt and/or authentication)
 Password (hashed for security/ JWT maybe?)
 Role (customer or admin)
 BookingHistory (array of appointment references, maybe by appointmentID)
-2. Appointments Collection:
+
+Appointments Collection:
 AppointmentID (unique identifier)
 CustomerID (reference to the user who booked / UserID)
 ServiceID (reference to the type of service / ServiceID)
@@ -41,20 +42,23 @@ Date (chosen date of installation)
 TimeSlot (start/end time)
 Status (pending, confirmed, completed, canceled / drop down selection by admin?)
 Notes (special instructions, tech assigned?)
-3. Services Collection:
+
+Services Collection:
 ServiceID (unique identifier)
 ServiceType (installation type / stereo, alarm, GPS, remote start / more than 1 selection chooseable)
 Description (brief details about what’s included in each service)
 Price (cost of service)
 Duration (estimated time for install)
-4. Reviews Collection: (availble after completion/payment)
+
+Reviews Collection: (availble after completion/payment)
 ReviewID (unique identifier)
 CustomerID (reference to the user who left the review)
 AppointmentID (reference to the completed service)
 Rating (e.g., 1-5 stars)
 Comment (written feedback from customer)
 Date (date the review was left)
-5. Admin Dashboard Analytics Collection:
+
+Admin Dashboard Analytics Collection:
 RevenueData (total income from services, possibly broken down by service type)
 PopularServices (list of services sorted by number of bookings)
 CustomerStatistics (e.g., number of repeat customers)
