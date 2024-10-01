@@ -1,11 +1,17 @@
-function App() {
+import Home from './pages/Home';
+import Admin from './pages/Admin';
+import Booking from './pages/Booking';
+import Services from './pages/Services';
+
+const App = () => {
   return (
     <>
-        <hr></hr>
-      <h1>Hello</h1>
-      <hr></hr>
+        <Home/>
+        <Admin/>
+        <Booking/>
+        <Services/>
     </>
   )
 }
 
-export default App
+export default App;
