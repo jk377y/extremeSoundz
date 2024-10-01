@@ -1,0 +1,7 @@
+1) install packages:
+react-calendar
+react-router-dom
+
+2) remove unnecessary files
+
+3) 
