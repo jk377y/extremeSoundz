@@ -1,3 +1,5 @@
+# Full stack scheduling application for car stereo shop
+
 ## Key Features:
 
 #### Appointment Scheduling:<br>
@@ -19,8 +21,6 @@
 
 #### Customer Reviews and Ratings:<br>
 - After service completion, customers can leave reviews and ratings to provide feedback.
-
-------------------------------------------------------------------------------------------------------------
 
 ## Database Items: MongoDB
 
