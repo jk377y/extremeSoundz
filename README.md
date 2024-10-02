@@ -34,6 +34,15 @@
 - Role (customer or admin)<br>
 - BookingHistory (array of appointment references, maybe by appointmentID)<br>
 
+#### Products Collection:<br>
+- ProductID (unique identifier)<br>
+- ProductName (e.g., stereo, alarm, GPS, remote start)<br>
+- Brand (manufacturer)<br>
+- Description (brief details about the product)<br>
+- Cost (price to purchase from supplier)<br>
+- Price (cost of product)<br>
+- Quantity (number of units in stock)<br>
+
 #### Appointments Collection:<br>
 - AppointmentID (unique identifier)<br>
 - CustomerID (reference to the user who booked / UserID)<br>
