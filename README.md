@@ -36,7 +36,7 @@
 
 #### Products Collection:<br>
 - ProductID (unique identifier)<br>
-- ProductName (e.g., stereo, alarm, GPS, remote start)<br>
+- ProductCategory (e.g., stereo, alarm, GPS, remote start)<br>
 - Brand (manufacturer)<br>
 - Description (brief details about the product)<br>
 - Cost (price to purchase from supplier)<br>

@@ -10,6 +10,7 @@ const App = () => {
                 <a href="/">Home</a>&nbsp;|&nbsp;
                 <a href="/products">Products</a>&nbsp;|&nbsp; 
                 <a href="/services">Services</a>&nbsp;|&nbsp;
+                <a href="/login">Login</a>&nbsp;|&nbsp; 
                 <a href="/booking">Booking</a>&nbsp;|&nbsp; 
                 <a href="/admin">Admin</a>&nbsp;|&nbsp; 
                 <a href="404_Page_Not_Found">PageNotFound</a> {/*for testing bad routes*/}
