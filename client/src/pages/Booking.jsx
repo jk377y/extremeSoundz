@@ -59,19 +59,14 @@ const Booking = () => {
                     <legend>Select Services:</legend>
                     {services.map((service, index) => (
                         <div key={index}>
-                            <input
-                                type='checkbox'
-                                id={`service-${index}`}
-                                name='services'
-                                value={service}
-                                checked={selectedServices.includes(service)}
-                                onChange={() => handleServiceSelection(service)}
-                            />
+                            <input type='checkbox' id={`service-${index}`} name='services' value={service} checked={selectedServices.includes(service)} 
+                            onChange={() => handleServiceSelection(service)}/>
                             <label htmlFor={`service-${index}`}>{service}</label>
                         </div>
                     ))}
                 </fieldset>
                 <br />
+                
                 <button type='submit'>Submit</button>
             </form>
         </>
