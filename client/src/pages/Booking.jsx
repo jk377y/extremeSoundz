@@ -16,16 +16,14 @@ const Booking = () => {
     const [customerEmail, setCustomerEmail] = useState('');
     const [customerPhone, setCustomerPhone] = useState('');
 
-    // handle checkbox selection for services
     const handleServiceSelection = (service) => {
         setSelectedServices(prevSelected =>
             prevSelected.includes(service)
-                ? prevSelected.filter(s => s !== service)  // remove if already selected
-                : [...prevSelected, service]  // add if not selected
+                ? prevSelected.filter(s => s !== service)
+                : [...prevSelected, service]
         );
     };
 
-    // form submission
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log({
@@ -34,7 +32,6 @@ const Booking = () => {
             customerPhone,
             services: selectedServices
         });
-        // reset form
         setName('');
         setCustomerEmail('');
         setCustomerPhone('');
